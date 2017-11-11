@@ -13,6 +13,7 @@
 		188FC8A61FB70F640017E60E /* To_do_list.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 188FC8A41FB70F640017E60E /* To_do_list.xcdatamodeld */; };
 		188FC8AB1FB70F640017E60E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188FC8A91FB70F640017E60E /* LaunchScreen.storyboard */; };
 		188FC8B31FB713360017E60E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188FC8B21FB713360017E60E /* Assets.xcassets */; };
+		188FC8B51FB72F3B0017E60E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FC8B41FB72F3B0017E60E /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		188FC8AA1FB70F640017E60E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		188FC8AC1FB70F640017E60E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		188FC8B21FB713360017E60E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		188FC8B41FB72F3B0017E60E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				188FC89D1FB70F640017E60E /* AppDelegate.swift */,
 				188FC89F1FB70F640017E60E /* ViewController.swift */,
+				188FC8B41FB72F3B0017E60E /* Task.swift */,
 				188FC8A11FB70F640017E60E /* Main.storyboard */,
 				188FC8A91FB70F640017E60E /* LaunchScreen.storyboard */,
 				188FC8AC1FB70F640017E60E /* Info.plist */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188FC8B51FB72F3B0017E60E /* Task.swift in Sources */,
 				188FC8A01FB70F640017E60E /* ViewController.swift in Sources */,
 				188FC8A61FB70F640017E60E /* To_do_list.xcdatamodeld in Sources */,
 				188FC89E1FB70F640017E60E /* AppDelegate.swift in Sources */,
@@ -282,7 +286,7 @@
 				DEVELOPMENT_TEAM = XMRBC7TB73;
 				INFOPLIST_FILE = "To-do-list/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.To-do-list";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.To-do-list.-To-do-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,7 +301,7 @@
 				DEVELOPMENT_TEAM = XMRBC7TB73;
 				INFOPLIST_FILE = "To-do-list/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.To-do-list";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.To-do-list.-To-do-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
