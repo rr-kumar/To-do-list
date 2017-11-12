@@ -12,8 +12,9 @@
 		188FC8A31FB70F640017E60E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188FC8A11FB70F640017E60E /* Main.storyboard */; };
 		188FC8A61FB70F640017E60E /* To_do_list.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 188FC8A41FB70F640017E60E /* To_do_list.xcdatamodeld */; };
 		188FC8AB1FB70F640017E60E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188FC8A91FB70F640017E60E /* LaunchScreen.storyboard */; };
-		188FC8B31FB713360017E60E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188FC8B21FB713360017E60E /* Assets.xcassets */; };
 		188FC8B51FB72F3B0017E60E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FC8B41FB72F3B0017E60E /* Task.swift */; };
+		188FC8BA1FB744AE0017E60E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188FC8B91FB744AE0017E60E /* Assets.xcassets */; };
+		18CC22C11FB817C100D88576 /* CreatelistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC22C01FB817C100D88576 /* CreatelistViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,9 @@
 		188FC8A51FB70F640017E60E /* To_do_list.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = To_do_list.xcdatamodel; sourceTree = "<group>"; };
 		188FC8AA1FB70F640017E60E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		188FC8AC1FB70F640017E60E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		188FC8B21FB713360017E60E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		188FC8B41FB72F3B0017E60E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		188FC8B91FB744AE0017E60E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18CC22C01FB817C100D88576 /* CreatelistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatelistViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +61,13 @@
 			isa = PBXGroup;
 			children = (
 				188FC89D1FB70F640017E60E /* AppDelegate.swift */,
-				188FC89F1FB70F640017E60E /* ViewController.swift */,
 				188FC8B41FB72F3B0017E60E /* Task.swift */,
+				18CC22C01FB817C100D88576 /* CreatelistViewController.swift */,
+				188FC89F1FB70F640017E60E /* ViewController.swift */,
 				188FC8A11FB70F640017E60E /* Main.storyboard */,
 				188FC8A91FB70F640017E60E /* LaunchScreen.storyboard */,
 				188FC8AC1FB70F640017E60E /* Info.plist */,
-				188FC8B21FB713360017E60E /* Assets.xcassets */,
+				188FC8B91FB744AE0017E60E /* Assets.xcassets */,
 				188FC8A41FB70F640017E60E /* To_do_list.xcdatamodeld */,
 			);
 			path = "To-do-list";
@@ -130,7 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				188FC8AB1FB70F640017E60E /* LaunchScreen.storyboard in Resources */,
-				188FC8B31FB713360017E60E /* Assets.xcassets in Resources */,
+				188FC8BA1FB744AE0017E60E /* Assets.xcassets in Resources */,
 				188FC8A31FB70F640017E60E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +149,7 @@
 				188FC8A01FB70F640017E60E /* ViewController.swift in Sources */,
 				188FC8A61FB70F640017E60E /* To_do_list.xcdatamodeld in Sources */,
 				188FC89E1FB70F640017E60E /* AppDelegate.swift in Sources */,
+				18CC22C11FB817C100D88576 /* CreatelistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XMRBC7TB73;
 				INFOPLIST_FILE = "To-do-list/Info.plist";
@@ -297,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XMRBC7TB73;
 				INFOPLIST_FILE = "To-do-list/Info.plist";

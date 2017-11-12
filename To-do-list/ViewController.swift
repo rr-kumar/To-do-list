@@ -63,6 +63,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
     }
     
+    @IBAction func addButton(_ sender: Any) {
+        performSegue(withIdentifier: "addSegue", sender: nil)
+    }
     
 }
 
