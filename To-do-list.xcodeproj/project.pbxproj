@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1824DBA11FBC8887000BFB3A /* DeletetaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824DBA01FBC8887000BFB3A /* DeletetaskViewController.swift */; };
 		188FC89E1FB70F640017E60E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FC89D1FB70F640017E60E /* AppDelegate.swift */; };
 		188FC8A01FB70F640017E60E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FC89F1FB70F640017E60E /* ViewController.swift */; };
 		188FC8A31FB70F640017E60E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188FC8A11FB70F640017E60E /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1824DBA01FBC8887000BFB3A /* DeletetaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletetaskViewController.swift; sourceTree = "<group>"; };
 		188FC89A1FB70F640017E60E /* To-do-list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-do-list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		188FC89D1FB70F640017E60E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		188FC89F1FB70F640017E60E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				188FC8B41FB72F3B0017E60E /* Task.swift */,
 				18CC22C01FB817C100D88576 /* CreatelistViewController.swift */,
 				188FC89F1FB70F640017E60E /* ViewController.swift */,
+				1824DBA01FBC8887000BFB3A /* DeletetaskViewController.swift */,
 				188FC8A11FB70F640017E60E /* Main.storyboard */,
 				188FC8A91FB70F640017E60E /* LaunchScreen.storyboard */,
 				188FC8AC1FB70F640017E60E /* Info.plist */,
@@ -149,6 +152,7 @@
 				188FC8A01FB70F640017E60E /* ViewController.swift in Sources */,
 				188FC8A61FB70F640017E60E /* To_do_list.xcdatamodeld in Sources */,
 				188FC89E1FB70F640017E60E /* AppDelegate.swift in Sources */,
+				1824DBA11FBC8887000BFB3A /* DeletetaskViewController.swift in Sources */,
 				18CC22C11FB817C100D88576 /* CreatelistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

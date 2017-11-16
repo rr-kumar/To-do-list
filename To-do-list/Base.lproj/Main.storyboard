@@ -43,6 +43,7 @@
                     <connections>
                         <outlet property="tableView" destination="fnO-ZG-bUw" id="aih-q5-lR5"/>
                         <segue destination="KY2-cC-xef" kind="show" identifier="addSegue" id="Ypa-7o-3X1"/>
+                        <segue destination="Z2F-cV-blT" kind="show" identifier="deletetaskSegue" id="wDY-Fr-F1T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -119,6 +120,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqR-KS-Dhj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1169" y="116"/>
+        </scene>
+        <!--Deletetask View Controller-->
+        <scene sceneID="ZM5-DL-Ia3">
+            <objects>
+                <viewController id="Z2F-cV-blT" customClass="DeletetaskViewController" customModule="To_do_list" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="23J-Uc-u3N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K70-h6-lmL">
+                                <rect key="frame" x="152" y="161" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvx-V7-wNT">
+                                <rect key="frame" x="154.5" y="212" width="66" height="39"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" red="0.99229246377944946" green="0.99612778425216675" blue="0.995960533618927" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deletetaskButton:" destination="Z2F-cV-blT" eventType="touchUpInside" id="oSs-dX-Ff6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Pvx-V7-wNT" firstAttribute="centerX" secondItem="23J-Uc-u3N" secondAttribute="centerX" id="E6r-dE-R8o"/>
+                            <constraint firstItem="K70-h6-lmL" firstAttribute="top" secondItem="a2W-VY-es3" secondAttribute="top" constant="97" id="HLp-nm-XXg"/>
+                            <constraint firstItem="K70-h6-lmL" firstAttribute="centerX" secondItem="23J-Uc-u3N" secondAttribute="centerX" id="Jw3-3y-azJ"/>
+                            <constraint firstItem="Pvx-V7-wNT" firstAttribute="top" secondItem="K70-h6-lmL" secondAttribute="bottom" constant="30" id="iKe-pX-19W"/>
+                            <constraint firstItem="a2W-VY-es3" firstAttribute="bottom" secondItem="K70-h6-lmL" secondAttribute="bottom" constant="485" id="qgy-sC-tMS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a2W-VY-es3"/>
+                    </view>
+                    <connections>
+                        <outlet property="viewtaskLabel" destination="K70-h6-lmL" id="kND-dX-eYS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VkQ-NP-q3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169" y="885"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jrQ-xT-t3e">

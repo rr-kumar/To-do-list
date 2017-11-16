@@ -13,6 +13,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     @IBOutlet weak var tableView: UITableView!
     
     var tasks:[Task] = []
+    var selectedIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -41,17 +42,23 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndex = indexPath.row
+        let task = tasks[indexPath.row]
+        performSegue(withIdentifier: "deletetaskSegue", sender: task)
+    }
+    
     func addTask() -> [Task] {
         let task1 = Task()
         task1.taskname = "Complete Swift tutorial"
         task1.priority = true
         
         let task2 = Task()
-        task2.taskname = "Complete web development tutorial"
+        task2.taskname = "Time to learn"
         task2.priority = false
         
         let task3 = Task()
-        task3.taskname = "Apply Apple creative Job"
+        task3.taskname = "Apply creative Job"
         task3.priority = true
         
         return[task1,task2,task3]
@@ -67,8 +74,18 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         performSegue(withIdentifier: "addSegue", sender: nil)
         }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "addsegue"{
         let nextVC = segue.destination as! CreatelistViewController
         nextVC.previousVC = self
+        }
+        
+        if segue.identifier == "deletetaskSegue"{
+            let nextVC = segue.destination as! DeletetaskViewController
+            nextVC.task = sender as! Task
+              nextVC.previousVC = self
+            
+        }
     }
 }
 
