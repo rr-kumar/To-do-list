@@ -13,26 +13,28 @@ class CreatelistViewController: UIViewController {
     
     @IBOutlet weak var createtaskTextField: UITextField!
     
-    var previousVC = ViewController()
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      
+        
+        
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func AddButton(_ sender: Any) {
         // create new task from createviewController outlet
         
-        let newTask = Task()
+       let showcontext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let newTask = Task(context: showcontext)
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
         newTask.taskname = createtaskTextField.text!
         newTask.priority = prioritySwitch.isOn
         
-        // Add New task array for previousViewController
+        // Pop back the task from core data
         
-        previousVC.tasks.append(newTask)
-        previousVC.tableView.reloadData()
+     
         navigationController!.popViewController(animated: true)
     }
     override func didReceiveMemoryWarning() {
@@ -42,5 +44,5 @@ class CreatelistViewController: UIViewController {
     
     
     
-   
+    
 }

@@ -13,7 +13,6 @@
 		188FC8A31FB70F640017E60E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188FC8A11FB70F640017E60E /* Main.storyboard */; };
 		188FC8A61FB70F640017E60E /* To_do_list.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 188FC8A41FB70F640017E60E /* To_do_list.xcdatamodeld */; };
 		188FC8AB1FB70F640017E60E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188FC8A91FB70F640017E60E /* LaunchScreen.storyboard */; };
-		188FC8B51FB72F3B0017E60E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FC8B41FB72F3B0017E60E /* Task.swift */; };
 		188FC8BA1FB744AE0017E60E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188FC8B91FB744AE0017E60E /* Assets.xcassets */; };
 		18CC22C11FB817C100D88576 /* CreatelistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC22C01FB817C100D88576 /* CreatelistViewController.swift */; };
 /* End PBXBuildFile section */
@@ -27,7 +26,6 @@
 		188FC8A51FB70F640017E60E /* To_do_list.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = To_do_list.xcdatamodel; sourceTree = "<group>"; };
 		188FC8AA1FB70F640017E60E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		188FC8AC1FB70F640017E60E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		188FC8B41FB72F3B0017E60E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		188FC8B91FB744AE0017E60E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18CC22C01FB817C100D88576 /* CreatelistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatelistViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				188FC89D1FB70F640017E60E /* AppDelegate.swift */,
-				188FC8B41FB72F3B0017E60E /* Task.swift */,
 				18CC22C01FB817C100D88576 /* CreatelistViewController.swift */,
 				188FC89F1FB70F640017E60E /* ViewController.swift */,
 				1824DBA01FBC8887000BFB3A /* DeletetaskViewController.swift */,
@@ -148,7 +145,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				188FC8B51FB72F3B0017E60E /* Task.swift in Sources */,
 				188FC8A01FB70F640017E60E /* ViewController.swift in Sources */,
 				188FC8A61FB70F640017E60E /* To_do_list.xcdatamodeld in Sources */,
 				188FC89E1FB70F640017E60E /* AppDelegate.swift in Sources */,

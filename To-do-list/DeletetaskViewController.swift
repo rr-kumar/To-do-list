@@ -11,27 +11,29 @@ import UIKit
 class DeletetaskViewController: UIViewController {
     
     @IBOutlet weak var viewtaskLabel: UILabel!
-    var task = Task()
-    var previousVC = ViewController()
+    var task: Task? = nil
+  
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if task.priority {
+        if task!.priority {
             
-           viewtaskLabel.text = "🔴  \(task.taskname)"
+           viewtaskLabel.text = "🔴  \(task!.taskname!)"
             
-        }else{
-          viewtaskLabel.text = "🔵  \(task.taskname)"
+        }else {
+        viewtaskLabel.text = "🔵  \(task!.taskname!)"
             
         }
      
     }
 
     @IBAction func deletetaskButton(_ sender: Any) {
-       previousVC.tasks.remove(at: previousVC.selectedIndex)
-        previousVC.tableView.reloadData()
+      
+        let showcontext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        showcontext.delete(task!)
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
         navigationController!.popViewController(animated: true)
      
     }
